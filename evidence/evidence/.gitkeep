@@ -1,0 +1,84 @@
+import os
+import json
+import hashlib
+import zipfile
+from datetime import datetime
+
+# Required external libraries: pip install Pillow exifread
+from PIL import Image
+import exifread
+
+class ContinuousForensicAgent:
+    def __init__(self, target_directory="./evidence", output_path="manus_report.json"):
+        self.target_directory = target_directory
+        self.output_path = output_path
+        self.report = {
+            "metadata": {
+                "scan_time": datetime.now().isoformat(),
+                "status": "completed"
+            },
+            "findings": []
+        }
+
+    def hash_file(self, filepath):
+        hasher = hashlib.sha256()
+        with open(filepath, "rb") as f:
+            for chunk in iter(lambda: f.read(4096), b""):
+                hasher.update(chunk)
+        return hasher.hexdigest()
+
+    def scan_directory(self):
+        if not os.path.exists(self.target_directory):
+            print(f"Directory {self.target_directory} not found. Skipping scan.")
+            return
+
+        for root, _, files in os.walk(self.target_directory):
+            for file in files:
+                filepath = os.path.join(root, file)
+                ext = file.lower().split('.')[-1]
+                
+                file_data = {
+                    "filename": file,
+                    "hash_sha256": self.hash_file(filepath),
+                    "type": ext,
+                    "flags": []
+                }
+
+                if ext in ['jpg', 'jpeg', 'png']:
+                    self._analyze_image(filepath, file_data)
+                elif ext == 'apk':
+                    self._analyze_apk(filepath, file_data)
+                
+                self.report["findings"].append(file_data)
+        
+        self._save_report()
+
+    def _analyze_image(self, filepath, file_data):
+        try:
+            with open(filepath, 'rb') as f:
+                tags = exifread.process_file(f, details=False)
+                software = str(tags.get("Image Software", "")).lower()
+                if any(x in software for x in ["photoshop", "gimp", "canva"]):
+                    file_data["flags"].append("MANIPULATION_SOFTWARE_DETECTED")
+        except Exception as e:
+            file_data["flags"].append(f"IMAGE_READ_ERROR: {str(e)}")
+
+    def _analyze_apk(self, filepath, file_data):
+        try:
+            if zipfile.is_zipfile(filepath):
+                with zipfile.ZipFile(filepath, 'r') as apk:
+                    if 'AndroidManifest.xml' not in apk.namelist():
+                        file_data["flags"].append("CRITICAL: NO_MANIFEST")
+            else:
+                file_data["flags"].append("CRITICAL: INVALID_APK_ARCHIVE")
+        except Exception as e:
+            file_data["flags"].append(f"APK_PARSE_ERROR: {str(e)}")
+
+    def _save_report(self):
+        with open(self.output_path, 'w') as f:
+            json.dump(self.report, f, indent=4)
+        print(f"Report successfully generated at {self.output_path}")
+
+if __name__ == "__main__":
+    agent = ContinuousForensicAgent()
+    agent.scan_directory()
