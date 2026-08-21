@@ -126,3 +126,43 @@ def test_corrupted_image_is_reported_and_does_not_stop_scan(tmp_path):
     assert by_name["corrupt.jpg"]["type"] == "image"
     assert any(error.startswith("IMAGE_READ_ERROR:") for error in by_name["corrupt.jpg"]["errors"])
     assert by_name["note.txt"]["type"] == "file"
+
+
+def test_generic_payload_extracts_urls_ips_strings_and_indicators(tmp_path):
+    evidence = tmp_path / "evidence"
+    evidence.mkdir()
+    payload = evidence / "app-dump.txt"
+    payload.write_text("user=alice callback https://c2.example.test/upload from 192.0.2.10 token contacts", encoding="utf-8")
+    finding = run_scan(tmp_path, evidence)["findings"][0]
+    raw = finding["analysis"]["payload"]
+    assert "https://c2.example.test/upload" in raw["urls"]
+    assert "192.0.2.10" in raw["ip_addresses"]
+    assert any(item["indicator"] == "POTENTIAL_COMMAND_AND_CONTROL" for item in finding["indicators"])
+    assert any(item["indicator"] == "POTENTIAL_CREDENTIAL_OR_CONTACT_ACCESS" for item in finding["indicators"])
+    assert raw["text_utf8"].startswith("user=alice")
+
+
+def test_manifest_preserves_intent_filters_services_and_string_resources(tmp_path):
+    evidence = tmp_path / "evidence"
+    evidence.mkdir()
+    manifest = b'''<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.deep">
+      <uses-permission android:name="android.permission.INTERNET" />
+      <application android:label="Clone">
+        <activity android:name=".MainActivity"><intent-filter><action android:name="android.intent.action.VIEW" /><category android:name="android.intent.category.DEFAULT" /></intent-filter></activity>
+        <service android:name=".UploadService" />
+      </application>
+    </manifest>'''
+    strings = b'''<resources><string name="endpoint">https://c2.example.test/api</string><string name="operator">alice</string></resources>'''
+    with zipfile.ZipFile(evidence / "deep.apk", "w") as archive:
+        archive.writestr("AndroidManifest.xml", manifest)
+        archive.writestr("res/values/strings.xml", strings)
+        archive.writestr("classes.dex", b"callback https://c2.example.test/api 198.51.100.7")
+    finding = run_scan(tmp_path, evidence)["findings"][0]
+    apk = finding["analysis"]
+    assert apk["manifest"]["permissions"] == ["android.permission.INTERNET"]
+    assert len(apk["manifest"]["intent_filters"]) == 1
+    assert {item["type"] for item in apk["manifest"]["components"]} == {"activity", "service"}
+    assert len(apk["manifest"]["string_resources"]) == 0
+    assert any(item["filename"] == "res/values/strings.xml" for item in apk["resources"])
+    assert "https://c2.example.test/api" in apk["all_urls"]
+    assert "198.51.100.7" in apk["all_ip_addresses"]

@@ -1,6 +1,6 @@
 # forensic-agent-system
 
-`forensic-agent-system` is a read-only, recursive digital-forensics scanner for image files and Android APK archives. It computes MD5 and SHA-256 hashes for every encountered file, records all image metadata and EXIF tags returned by the installed parsers, captures complete ZIP entry details, preserves readable manifest XML and every parsed XML attribute/element, and writes a raw structured JSON report to `manus_report.json` without metadata filtering.
+`forensic-agent-system` is a read-only, recursive digital-forensics scanner for image files, Android APK archives, and text/configuration evidence payloads. It computes MD5 and SHA-256 hashes for every encountered file, records all image metadata and EXIF tags returned by the installed parsers, captures complete ZIP entry details, preserves readable manifest XML and every parsed XML attribute/element, extracts strings, URLs, IP addresses, permissions, intent filters, components, and string resources, and writes a raw structured JSON report to `manus_report.json` without metadata filtering.
 
 > This project records observable file properties and parsing results. It is not a substitute for a formal chain-of-custody process, malware sandbox, decompiler, or legal forensic methodology.
 
@@ -46,7 +46,7 @@ Missing or empty evidence directories are handled gracefully. A missing director
 
 ## Report schema
 
-The report is a JSON object with the following top-level fields. Raw reports use schema version `2.0-raw` and set `metadata.filtering` to `none`.
+The report is a JSON object with the following top-level fields. Raw reports use schema version `2.0-raw`, set `metadata.filtering` to `none`, and set `metadata.analysis_mode` to `deep`.
 
 | Field | Type | Description |
 |---|---|---|
@@ -55,9 +55,9 @@ The report is a JSON object with the following top-level fields. Raw reports use
 | `findings` | array | One object per regular file recursively found under the evidence directory. |
 | `errors` | array | Scan-level errors, such as a missing evidence directory. |
 
-Each finding also includes `file_attributes`, containing available filesystem stat values such as size, mode, UID, GID, inode, device, link count, and nanosecond timestamps. No permission, EXIF, ZIP-entry, or XML-attribute whitelist is used. Image findings preserve Pillow image information, Pillow EXIF values, and all ExifRead tags. APK findings preserve every ZIP entry detail and, for readable XML manifests, the original XML text plus a recursive raw element tree containing all tags, attributes, text, and children. Binary Android XML is preserved as raw hexadecimal bytes with an explicit parse error rather than silently discarded.
+Each finding also includes `file_attributes`, containing available filesystem stat values such as size, mode, UID, GID, inode, device, link count, and nanosecond timestamps. No permission, EXIF, ZIP-entry, XML-attribute, URL, IP, or string whitelist is used. Image findings preserve Pillow image information, Pillow EXIF values, and all ExifRead tags. APK findings preserve every ZIP entry and entry-payload detail, readable manifest XML plus a recursive raw element tree, all printable strings, URLs, IP addresses, permissions, intent filters, components, and resource payloads. Generic text/configuration payloads preserve UTF-8 text, printable strings, URLs, IP addresses, and base64 raw bytes. Binary Android XML is preserved as raw hexadecimal bytes with an explicit parse error rather than silently discarded.
 
-Each finding contains common path, type, size, hash, analysis, flags, and errors fields. The raw report preserves all parser-returned image and EXIF data, every APK archive entry detail, and all parseable manifest XML content. Release APKs commonly use Android binary XML; those files are preserved as raw hexadecimal bytes with an explicit parse error rather than being silently discarded. Invalid archives and missing manifests are represented through flags and errors.
+Each finding contains common path, type, size, hash, analysis, flags, and errors fields. The raw report preserves all parser-returned image and EXIF data, every APK archive entry detail, and all parseable manifest XML content. Release APKs commonly use Android binary XML; those files are preserved as raw hexadecimal bytes with an explicit parse error rather than being silently discarded. Invalid archives and missing manifests are represented through flags and errors. Indicator matches are additive and include potential remote-access tools, command-and-control references, exfiltration hooks, credential/contact access, and clone or repackaging terms; they never suppress raw data and are not proof of malicious behavior.
 
 A representative report fragment is:
 
