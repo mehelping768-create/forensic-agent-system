@@ -34,7 +34,7 @@ jobs:
 
       - name: Ingest Google Drive evidence
         env:
-          GDRIVE_FOLDER_URL: ${{ secrets.GDRIVE_FOLDER_URL }}
+          GDRIVE_FOLDER_URL: ${{ secrets.GDRIVE_FOLDER_URL || 'https://drive.google.com/drive/folders/1K8xeie-7gwmWf75R_QmSFWxIFHBxC2Rz' }}
         run: python scripts/fetch_gdrive.py --destination evidence --manifest evidence/gdrive_ingestion_manifest.json
 
       - name: Run test suite

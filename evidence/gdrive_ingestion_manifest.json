@@ -1,0 +1,73 @@
+{
+  "schema_version": "gdrive-ingestion-1.0",
+  "ingestion_time_utc": "2026-08-21T01:05:04.599600+00:00",
+  "source_type": "public_google_drive_folder",
+  "source_configured": true,
+  "destination": "evidence",
+  "allowed_extensions": [
+    ".apk",
+    ".bak",
+    ".bmp",
+    ".cfg",
+    ".conf",
+    ".csv",
+    ".dump",
+    ".gif",
+    ".ini",
+    ".jpeg",
+    ".jpg",
+    ".json",
+    ".list",
+    ".log",
+    ".png",
+    ".properties",
+    ".tif",
+    ".tiff",
+    ".txt",
+    ".vcf",
+    ".webp",
+    ".xml",
+    ".yaml",
+    ".yml",
+    ".zip"
+  ],
+  "files": [
+    {
+      "source_relative_path": "DOC-20260726-WA0034.jpg",
+      "destination_relative_path": "photos/raw/DOC-20260726-WA0034.jpg",
+      "size_bytes": 1109,
+      "sha256": "cb35ff64567ffed50dc7e933f4f2e03cdbaeed63921b3977070582eb1265078a",
+      "extension": ".jpg"
+    },
+    {
+      "source_relative_path": "K2.vcf",
+      "destination_relative_path": "other/K2.vcf",
+      "size_bytes": 78,
+      "sha256": "744cfa42649b348f33ce3619d1c4d838e54fb6db2622523ca5c4eb25a3be1dde",
+      "extension": ".vcf"
+    },
+    {
+      "source_relative_path": "My account info.zip",
+      "destination_relative_path": "other/My account info.zip",
+      "size_bytes": 160115,
+      "sha256": "7682345eafd98c272383ca0400a28e9d1016af30ccbcf7afe96de638f97dd82f",
+      "extension": ".zip"
+    },
+    {
+      "source_relative_path": "nomedia_path_record.txt",
+      "destination_relative_path": "other/nomedia_path_record.txt",
+      "size_bytes": 106,
+      "sha256": "9c148e0599502c09633e5a012b17b79441a4c031c958e26533deef2cc3846069",
+      "extension": ".txt"
+    },
+    {
+      "source_relative_path": "vcards_20260810_050049.vcf",
+      "destination_relative_path": "other/vcards_20260810_050049.vcf",
+      "size_bytes": 7895,
+      "sha256": "0be460829e37846094e085ac22f6fc3029f67d15a6b71101928c985e95df8160",
+      "extension": ".vcf"
+    }
+  ],
+  "errors": [],
+  "status": "completed"
+}

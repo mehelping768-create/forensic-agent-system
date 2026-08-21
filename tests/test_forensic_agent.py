@@ -190,6 +190,6 @@ def test_gdrive_ingestion_copies_only_allowed_files_with_provenance(tmp_path):
     (source_dir / "notes.txt").write_text("not copied", encoding="utf-8")
     destination = tmp_path / "evidence"
     copied = copy_selected_files(download_root, destination, {".jpg", ".apk"})
-    assert {item["destination_relative_path"] for item in copied} == {"folder/photo.JPG", "folder/app.apk"}
+    assert {item["destination_relative_path"] for item in copied} == {"photos/raw/folder/photo.JPG", "other/folder/app.apk"}
     assert not (destination / "folder/notes.txt").exists()
     assert all(item["sha256"] for item in copied)

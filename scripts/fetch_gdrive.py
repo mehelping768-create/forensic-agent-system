@@ -19,7 +19,9 @@ from typing import Any
 
 import gdown
 
-DEFAULT_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".tif", ".tiff", ".bmp", ".apk"}
+IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".tif", ".tiff", ".bmp"}
+OTHER_EXTENSIONS = {".apk", ".txt", ".log", ".csv", ".json", ".xml", ".yaml", ".yml", ".ini", ".conf", ".cfg", ".properties", ".dump", ".list", ".bak", ".vcf", ".zip"}
+DEFAULT_EXTENSIONS = IMAGE_EXTENSIONS | OTHER_EXTENSIONS
 
 
 def sha256(path: Path) -> str:
@@ -42,7 +44,8 @@ def copy_selected_files(download_root: Path, destination: Path, extensions: set[
         if not source.is_file() or source.is_symlink() or source.suffix.lower() not in extensions:
             continue
         relative = source.relative_to(download_root)
-        target = destination / relative
+        category = "photos/raw" if source.suffix.lower() in IMAGE_EXTENSIONS else "other"
+        target = destination / category / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         if target.exists():
             target = target.with_name(f"{target.stem}__gdrive{target.suffix}")
@@ -85,9 +88,9 @@ def fetch(folder_url: str | None, destination: Path, manifest_path: Path, extens
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Ingest image and APK files from a public Google Drive folder.")
+    parser = argparse.ArgumentParser(description="Ingest images, APKs, contacts, archives, and configuration payloads from a public Google Drive folder.")
     parser.add_argument("--folder-url", default=os.environ.get("GDRIVE_FOLDER_URL"), help="Public Google Drive folder URL; defaults to GDRIVE_FOLDER_URL")
-    parser.add_argument("--destination", default=os.environ.get("GDRIVE_DESTINATION", "evidence"))
+    parser.add_argument("--destination", default=os.environ.get("GDRIVE_DESTINATION", "evidence"), help="Evidence root; images route to photos/raw and other payloads to other")
     parser.add_argument("--manifest", default=os.environ.get("GDRIVE_MANIFEST", "evidence/gdrive_ingestion_manifest.json"))
     parser.add_argument("--extensions", default=os.environ.get("GDRIVE_EXTENSIONS"), help="Comma-separated extensions; default is images and APK")
     args = parser.parse_args()

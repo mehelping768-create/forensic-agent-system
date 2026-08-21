@@ -1,7 +1,7 @@
 {
   "schema_version": "forensic-detailed-summary-1.0",
   "scan_metadata": {
-    "scan_time_utc": "2026-08-21T00:47:27.125199+00:00",
+    "scan_time_utc": "2026-08-21T01:07:21.505711+00:00",
     "repository_relative_evidence_root": "evidence/",
     "image_extensions_scanned": [
       ".bmp",
@@ -15,20 +15,30 @@
     ],
     "timeline_gap_threshold_hours": 24,
     "requested_file_count": 18,
-    "actual_photo_file_count": 15,
-    "total_size_bytes": 17181105
+    "actual_photo_file_count": 16,
+    "total_size_bytes": 17182214
   },
   "summary": {
-    "photo_count": 15,
-    "total_size_bytes": 17181105,
+    "photo_count": 16,
+    "total_size_bytes": 17182214,
     "formats": {
-      "JPEG": 15
+      "JPEG": 16
     },
     "dimensions": {
+      "90x160": 1,
       "3840x2160": 14,
       "3648x2736": 1
     },
     "device_signatures": [
+      {
+        "signature": {
+          "make": null,
+          "model": null,
+          "software": null,
+          "unique_id": null
+        },
+        "count": 1
+      },
       {
         "signature": {
           "make": "samsung",
@@ -96,6 +106,83 @@
     "anomalies": []
   },
   "findings": [
+    {
+      "path": "photos/raw/DOC-20260726-WA0034.jpg",
+      "filename": "DOC-20260726-WA0034.jpg",
+      "extension": ".jpg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 1109,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 623714,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787274416939305662,
+        "modify_time_ns": 1785213249000000000,
+        "change_time_ns": 1787274383270913708,
+        "modify_time_utc": "2026-07-28T04:34:09+00:00"
+      },
+      "hashes": {
+        "md5": "d29e7fb878b465ae29557042208ed350",
+        "sha256": "cb35ff64567ffed50dc7e933f4f2e03cdbaeed63921b3977070582eb1265078a"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 90,
+        "height": 160,
+        "mode": "RGB",
+        "info": {
+          "jfif": 257,
+          "jfif_version": [
+            1,
+            1
+          ],
+          "jfif_unit": 0,
+          "jfif_density": [
+            72,
+            72
+          ],
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\x05\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00J\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00R\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00Z\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x03\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa0\\x02\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00Z\\xa0\\x03\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xa0\\x00\\x00\\x00\\x00'",
+          "photoshop": {
+            "1028": "b''",
+            "1061": "b'\\xd4\\x1d\\x8c\\xd9\\x8f\\x00\\xb2\\x04\\xe9\\x80\\t\\x98\\xec\\xf8B~'"
+          },
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 90,
+          "274": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Orientation": "Horizontal (normal)",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image ExifOffset": "90",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF ExifImageWidth": "90",
+        "EXIF ExifImageLength": "160"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": null,
+      "device_signature": {
+        "make": null,
+        "model": null,
+        "software": null,
+        "unique_id": null
+      }
+    },
     {
       "path": "photos/raw/IMG-20260725-WA0000.jpeg",
       "filename": "IMG-20260725-WA0000.jpeg",
