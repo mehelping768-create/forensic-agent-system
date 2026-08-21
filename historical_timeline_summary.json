@@ -1,0 +1,531 @@
+{
+  "schema_version": "historical-timeline-1.0",
+  "generated_at_utc": "2026-08-21T01:24:32.799097+00:00",
+  "scope": "Observed timestamps and call-log candidates from available evidence; gaps are not proof of missing evidence.",
+  "summary": {
+    "files_scanned": 25,
+    "timeline_event_count": 20,
+    "earliest_observed_timestamp_utc": "2023-09-25T20:39:03+00:00",
+    "latest_observed_timestamp_utc": "2026-07-19T04:06:39+00:00",
+    "call_log_sources": 16,
+    "call_record_count": 0,
+    "incoming_count": 0,
+    "outgoing_count": 0,
+    "missed_count": 0,
+    "duration_seconds_total": 0
+  },
+  "call_log_analysis": {
+    "database_candidates": [],
+    "sources": [
+      {
+        "source": "other/My account info.zip",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/My account info.zip::index.html",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/My account info.zip::whatsapp_connections/contacts.html",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/My account info.zip::whatsapp_settings/account_settings.json",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/My account info.zip::whatsapp_settings/account_settings.html",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/My account info.zip::whatsapp_account_information/user_information.json",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/My account info.zip::whatsapp_account_information/user_information.html",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/My account info__gdrive.zip",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/My account info__gdrive.zip::index.html",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/My account info__gdrive.zip::whatsapp_connections/contacts.html",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/My account info__gdrive.zip::whatsapp_settings/account_settings.json",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/My account info__gdrive.zip::whatsapp_settings/account_settings.html",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/My account info__gdrive.zip::whatsapp_account_information/user_information.json",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/My account info__gdrive.zip::whatsapp_account_information/user_information.html",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/vcards_20260810_050049.vcf",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      },
+      {
+        "source": "other/vcards_20260810_050049__gdrive.vcf",
+        "reason": "call-related terms present",
+        "record_count": 0,
+        "records": []
+      }
+    ],
+    "records": []
+  },
+  "timeline_events": [
+    {
+      "timestamp_utc": "2023-09-25T20:39:03+00:00",
+      "source": "other/My account info.zip::whatsapp_settings/terms_of_service.json",
+      "context": "1695674343"
+    },
+    {
+      "timestamp_utc": "2023-09-25T20:39:03+00:00",
+      "source": "other/My account info__gdrive.zip::whatsapp_settings/terms_of_service.json",
+      "context": "1695674343"
+    },
+    {
+      "timestamp_utc": "2025-07-12T00:56:57+00:00",
+      "source": "other/My account info.zip::whatsapp_settings/terms_of_service.json",
+      "context": "1752281817"
+    },
+    {
+      "timestamp_utc": "2025-07-12T00:56:57+00:00",
+      "source": "other/My account info__gdrive.zip::whatsapp_settings/terms_of_service.json",
+      "context": "1752281817"
+    },
+    {
+      "timestamp_utc": "2026-03-04T06:41:12+00:00",
+      "source": "other/My account info.zip::whatsapp_account_information/user_information.json",
+      "context": "1772606472"
+    },
+    {
+      "timestamp_utc": "2026-03-04T06:41:12+00:00",
+      "source": "other/My account info__gdrive.zip::whatsapp_account_information/user_information.json",
+      "context": "1772606472"
+    },
+    {
+      "timestamp_utc": "2026-06-11T00:12:34+00:00",
+      "source": "other/My account info.zip::whatsapp_account_information/registration_information.json",
+      "context": "1781136754"
+    },
+    {
+      "timestamp_utc": "2026-06-11T00:12:34+00:00",
+      "source": "other/My account info__gdrive.zip::whatsapp_account_information/registration_information.json",
+      "context": "1781136754"
+    },
+    {
+      "timestamp_utc": "2026-06-11T00:12:39+00:00",
+      "source": "other/My account info.zip::whatsapp_account_information/user_information.json",
+      "context": "1781136759"
+    },
+    {
+      "timestamp_utc": "2026-06-11T00:12:39+00:00",
+      "source": "other/My account info__gdrive.zip::whatsapp_account_information/user_information.json",
+      "context": "1781136759"
+    },
+    {
+      "timestamp_utc": "2026-07-15T22:34:27+00:00",
+      "source": "other/My account info.zip::whatsapp_account_information/user_information.json",
+      "context": "1784154867"
+    },
+    {
+      "timestamp_utc": "2026-07-15T22:34:27+00:00",
+      "source": "other/My account info__gdrive.zip::whatsapp_account_information/user_information.json",
+      "context": "1784154867"
+    },
+    {
+      "timestamp_utc": "2026-07-15T22:38:13+00:00",
+      "source": "other/My account info.zip::whatsapp_settings/account_settings.json",
+      "context": "1784155093"
+    },
+    {
+      "timestamp_utc": "2026-07-15T22:38:13+00:00",
+      "source": "other/My account info__gdrive.zip::whatsapp_settings/account_settings.json",
+      "context": "1784155093"
+    },
+    {
+      "timestamp_utc": "2026-07-16T02:24:26+00:00",
+      "source": "other/My account info.zip::whatsapp_settings/account_settings.json",
+      "context": "1784168666"
+    },
+    {
+      "timestamp_utc": "2026-07-16T02:24:26+00:00",
+      "source": "other/My account info__gdrive.zip::whatsapp_settings/account_settings.json",
+      "context": "1784168666"
+    },
+    {
+      "timestamp_utc": "2026-07-19T04:01:02+00:00",
+      "source": "other/My account info.zip::whatsapp_account_information/user_information.json",
+      "context": "1784433662"
+    },
+    {
+      "timestamp_utc": "2026-07-19T04:01:02+00:00",
+      "source": "other/My account info__gdrive.zip::whatsapp_account_information/user_information.json",
+      "context": "1784433662"
+    },
+    {
+      "timestamp_utc": "2026-07-19T04:06:39+00:00",
+      "source": "other/My account info.zip::whatsapp_account_information/user_information.json",
+      "context": "1784433999"
+    },
+    {
+      "timestamp_utc": "2026-07-19T04:06:39+00:00",
+      "source": "other/My account info__gdrive.zip::whatsapp_account_information/user_information.json",
+      "context": "1784433999"
+    }
+  ],
+  "filesystem_timestamps": [
+    {
+      "path": "other/.gitkeep",
+      "modify_time_utc": "2026-08-20T21:53:58.993330+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.829456+00:00",
+      "size_bytes": 3045
+    },
+    {
+      "path": "other/K2.vcf",
+      "modify_time_utc": "2026-08-10T04:35:25+00:00",
+      "change_time_utc": "2026-08-21T01:06:23.270914+00:00",
+      "size_bytes": 78
+    },
+    {
+      "path": "other/K2__gdrive.vcf",
+      "modify_time_utc": "2026-08-10T04:35:25+00:00",
+      "change_time_utc": "2026-08-21T01:15:43.797441+00:00",
+      "size_bytes": 78
+    },
+    {
+      "path": "other/My account info.zip",
+      "modify_time_utc": "2026-08-06T01:09:54+00:00",
+      "change_time_utc": "2026-08-21T01:06:23.270914+00:00",
+      "size_bytes": 160115
+    },
+    {
+      "path": "other/My account info__gdrive.zip",
+      "modify_time_utc": "2026-08-06T01:09:54+00:00",
+      "change_time_utc": "2026-08-21T01:15:43.797441+00:00",
+      "size_bytes": 160115
+    },
+    {
+      "path": "other/nomedia_path_record.txt",
+      "modify_time_utc": "2026-08-09T20:47:53+00:00",
+      "change_time_utc": "2026-08-21T01:06:23.274914+00:00",
+      "size_bytes": 106
+    },
+    {
+      "path": "other/nomedia_path_record__gdrive.txt",
+      "modify_time_utc": "2026-08-09T20:47:53+00:00",
+      "change_time_utc": "2026-08-21T01:15:43.797441+00:00",
+      "size_bytes": 106
+    },
+    {
+      "path": "other/vcards_20260810_050049.vcf",
+      "modify_time_utc": "2026-08-09T21:00:55+00:00",
+      "change_time_utc": "2026-08-21T01:06:23.274914+00:00",
+      "size_bytes": 7895
+    },
+    {
+      "path": "other/vcards_20260810_050049__gdrive.vcf",
+      "modify_time_utc": "2026-08-09T21:00:55+00:00",
+      "change_time_utc": "2026-08-21T01:15:43.797441+00:00",
+      "size_bytes": 7895
+    },
+    {
+      "path": "photos/raw/DOC-20260726-WA0034.jpg",
+      "modify_time_utc": "2026-07-28T04:34:09+00:00",
+      "change_time_utc": "2026-08-21T01:06:23.270914+00:00",
+      "size_bytes": 1109
+    },
+    {
+      "path": "photos/raw/IMG-20260725-WA0000.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.006235+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.813456+00:00",
+      "size_bytes": 921093
+    },
+    {
+      "path": "photos/raw/IMG-20260731-WA0000.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.014235+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.813456+00:00",
+      "size_bytes": 1230568
+    },
+    {
+      "path": "photos/raw/IMG-20260731-WA0003.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.018235+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.813456+00:00",
+      "size_bytes": 1150627
+    },
+    {
+      "path": "photos/raw/IMG-20260731-WA0006.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.026235+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.817456+00:00",
+      "size_bytes": 981295
+    },
+    {
+      "path": "photos/raw/IMG-20260731-WA0009.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.030236+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.817456+00:00",
+      "size_bytes": 902238
+    },
+    {
+      "path": "photos/raw/IMG-20260731-WA0012.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.034235+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.817456+00:00",
+      "size_bytes": 1112066
+    },
+    {
+      "path": "photos/raw/IMG-20260731-WA0048.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.042236+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.821456+00:00",
+      "size_bytes": 1097177
+    },
+    {
+      "path": "photos/raw/IMG-20260802-WA0001.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.046236+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.821456+00:00",
+      "size_bytes": 871404
+    },
+    {
+      "path": "photos/raw/IMG-20260802-WA0004.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.050236+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.821456+00:00",
+      "size_bytes": 834828
+    },
+    {
+      "path": "photos/raw/IMG-20260804-WA0000.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.054236+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.821456+00:00",
+      "size_bytes": 1090637
+    },
+    {
+      "path": "photos/raw/IMG-20260804-WA0003.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.062236+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.825456+00:00",
+      "size_bytes": 1067510
+    },
+    {
+      "path": "photos/raw/IMG-20260804-WA0006.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.066236+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.825456+00:00",
+      "size_bytes": 937538
+    },
+    {
+      "path": "photos/raw/IMG-20260804-WA0014.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.070236+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.825456+00:00",
+      "size_bytes": 1251154
+    },
+    {
+      "path": "photos/raw/IMG-20260804-WA0017.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.074236+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.829456+00:00",
+      "size_bytes": 740048
+    },
+    {
+      "path": "photos/raw/IMG-20260814-WA0000.jpeg",
+      "modify_time_utc": "2026-08-20T23:31:56.082236+00:00",
+      "change_time_utc": "2026-08-21T00:47:04.829456+00:00",
+      "size_bytes": 2992922
+    }
+  ],
+  "archive_members": [
+    {
+      "archive": "other/My account info.zip",
+      "member": "index.html",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 14113
+    },
+    {
+      "archive": "other/My account info.zip",
+      "member": "files/WhatsApp-Logo.png",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 5694
+    },
+    {
+      "archive": "other/My account info.zip",
+      "member": "whatsapp_connections/contacts.json",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 1324
+    },
+    {
+      "archive": "other/My account info.zip",
+      "member": "whatsapp_connections/contacts.html",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 16244
+    },
+    {
+      "archive": "other/My account info.zip",
+      "member": "whatsapp_settings/account_settings.json",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 1218
+    },
+    {
+      "archive": "other/My account info.zip",
+      "member": "whatsapp_settings/terms_of_service.json",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 279
+    },
+    {
+      "archive": "other/My account info.zip",
+      "member": "whatsapp_settings/account_settings.html",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 18527
+    },
+    {
+      "archive": "other/My account info.zip",
+      "member": "whatsapp_settings/terms_of_service.html",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 17167
+    },
+    {
+      "archive": "other/My account info.zip",
+      "member": "whatsapp_account_information/registration_information.json",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 158
+    },
+    {
+      "archive": "other/My account info.zip",
+      "member": "whatsapp_account_information/user_information.json",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 3072
+    },
+    {
+      "archive": "other/My account info.zip",
+      "member": "whatsapp_account_information/registration_information.html",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 15809
+    },
+    {
+      "archive": "other/My account info.zip",
+      "member": "whatsapp_account_information/user_information.html",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 17215
+    },
+    {
+      "archive": "other/My account info.zip",
+      "member": "media/1154673297737352.jpg",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 47287
+    },
+    {
+      "archive": "other/My account info__gdrive.zip",
+      "member": "index.html",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 14113
+    },
+    {
+      "archive": "other/My account info__gdrive.zip",
+      "member": "files/WhatsApp-Logo.png",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 5694
+    },
+    {
+      "archive": "other/My account info__gdrive.zip",
+      "member": "whatsapp_connections/contacts.json",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 1324
+    },
+    {
+      "archive": "other/My account info__gdrive.zip",
+      "member": "whatsapp_connections/contacts.html",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 16244
+    },
+    {
+      "archive": "other/My account info__gdrive.zip",
+      "member": "whatsapp_settings/account_settings.json",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 1218
+    },
+    {
+      "archive": "other/My account info__gdrive.zip",
+      "member": "whatsapp_settings/terms_of_service.json",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 279
+    },
+    {
+      "archive": "other/My account info__gdrive.zip",
+      "member": "whatsapp_settings/account_settings.html",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 18527
+    },
+    {
+      "archive": "other/My account info__gdrive.zip",
+      "member": "whatsapp_settings/terms_of_service.html",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 17167
+    },
+    {
+      "archive": "other/My account info__gdrive.zip",
+      "member": "whatsapp_account_information/registration_information.json",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 158
+    },
+    {
+      "archive": "other/My account info__gdrive.zip",
+      "member": "whatsapp_account_information/user_information.json",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 3072
+    },
+    {
+      "archive": "other/My account info__gdrive.zip",
+      "member": "whatsapp_account_information/registration_information.html",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 15809
+    },
+    {
+      "archive": "other/My account info__gdrive.zip",
+      "member": "whatsapp_account_information/user_information.html",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 17215
+    },
+    {
+      "archive": "other/My account info__gdrive.zip",
+      "member": "media/1154673297737352.jpg",
+      "archive_datetime_utc": "2026-07-18T21:06:48+00:00",
+      "size_bytes": 47287
+    }
+  ]
+}

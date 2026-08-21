@@ -90,6 +90,10 @@ python scripts/fetch_gdrive.py --destination evidence --manifest evidence/gdrive
 
 If `GDRIVE_FOLDER_URL` is not configured, the script exits successfully with `skipped_no_folder_url`, allowing the workflow to scan repository evidence without requiring a Drive source. The folder must be publicly accessible to the downloader; authenticated private Drive ingestion should use a separately managed service account or API credential rather than committing credentials to the repository.
 
+## Historical timeline and call-log analysis
+
+Run `python scripts/generate_historical_timeline.py` to create `historical_timeline_summary.json` and extend `forensic_detailed_summary.json`. The analyzer safely inspects archive members, JSON/XML/text exports, database candidates, image metadata already present in the detailed report, filesystem timestamps, and archive-member timestamps. It does not execute archives or contact discovered endpoints. Call-log records are reported with direction, timestamps, and durations when a supported database or export is present; absent records are reported explicitly rather than inferred.
+
 ## Account security audit
 
 Run `python scripts/generate_account_security_audit.py` after ingestion to create `account_security_audit.json`. The audit extracts observed usernames, phone numbers, email addresses, contact-change phrases, URLs, IP addresses, and additive network/account/contact indicators from text, VCF, HTML, and ZIP payloads. It is read-only and treats pattern matches as observations rather than proof of compromise.
