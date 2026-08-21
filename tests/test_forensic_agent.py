@@ -166,3 +166,30 @@ def test_manifest_preserves_intent_filters_services_and_string_resources(tmp_pat
     assert any(item["filename"] == "res/values/strings.xml" for item in apk["resources"])
     assert "https://c2.example.test/api" in apk["all_urls"]
     assert "198.51.100.7" in apk["all_ip_addresses"]
+
+
+def test_gdrive_ingestion_skips_cleanly_without_configured_url(tmp_path):
+    from scripts.fetch_gdrive import fetch, parse_extensions
+
+    destination = tmp_path / "evidence"
+    manifest_path = tmp_path / "manifest.json"
+    result = fetch(None, destination, manifest_path, parse_extensions(None))
+    assert result["status"] == "skipped_no_folder_url"
+    assert result["files"] == []
+    assert json.loads(manifest_path.read_text()) ["status"] == "skipped_no_folder_url"
+
+
+def test_gdrive_ingestion_copies_only_allowed_files_with_provenance(tmp_path):
+    from scripts.fetch_gdrive import copy_selected_files
+
+    download_root = tmp_path / "download"
+    source_dir = download_root / "folder"
+    source_dir.mkdir(parents=True)
+    (source_dir / "photo.JPG").write_bytes(b"image")
+    (source_dir / "app.apk").write_bytes(b"apk")
+    (source_dir / "notes.txt").write_text("not copied", encoding="utf-8")
+    destination = tmp_path / "evidence"
+    copied = copy_selected_files(download_root, destination, {".jpg", ".apk"})
+    assert {item["destination_relative_path"] for item in copied} == {"folder/photo.JPG", "folder/app.apk"}
+    assert not (destination / "folder/notes.txt").exists()
+    assert all(item["sha256"] for item in copied)

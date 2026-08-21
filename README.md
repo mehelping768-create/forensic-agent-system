@@ -77,6 +77,19 @@ A representative report fragment is:
 }
 ```
 
+## Google Drive ingestion
+
+The workflow can optionally ingest files from a public Google Drive folder before running the raw scan. Add the folder’s share URL as the repository Actions secret `GDRIVE_FOLDER_URL`. The ingestion step downloads the folder into a temporary workspace, copies only image files and APKs into `evidence/`, preserves subfolder paths, avoids overwriting existing files by adding a `__gdrive` suffix, and writes `evidence/gdrive_ingestion_manifest.json` with source paths, destination paths, sizes, and SHA-256 hashes. It never deletes existing evidence and never executes downloaded content.
+
+The same operation can be run locally:
+
+```bash
+export GDRIVE_FOLDER_URL="https://drive.google.com/drive/folders/your-public-folder-id"
+python scripts/fetch_gdrive.py --destination evidence --manifest evidence/gdrive_ingestion_manifest.json
+```
+
+If `GDRIVE_FOLDER_URL` is not configured, the script exits successfully with `skipped_no_folder_url`, allowing the workflow to scan repository evidence without requiring a Drive source. The folder must be publicly accessible to the downloader; authenticated private Drive ingestion should use a separately managed service account or API credential rather than committing credentials to the repository.
+
 ## Tests
 
 Run the complete test suite with:
