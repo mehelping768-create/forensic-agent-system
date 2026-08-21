@@ -1,7 +1,7 @@
 {
   "schema_version": "forensic-detailed-summary-1.0",
   "scan_metadata": {
-    "scan_time_utc": "2026-08-21T00:40:33.504288+00:00",
+    "scan_time_utc": "2026-08-21T00:47:27.125199+00:00",
     "repository_relative_evidence_root": "evidence/",
     "image_extensions_scanned": [
       ".bmp",
@@ -67,29 +67,29 @@
         "from": "2026-07-25T03:41:34+00:00",
         "to": "2026-07-31T11:13:47+00:00",
         "gap_hours": 151.537,
-        "from_file": "evidence/IMG-20260725-WA0000.jpeg",
-        "to_file": "evidence/IMG-20260731-WA0000.jpeg"
+        "from_file": "photos/raw/IMG-20260725-WA0000.jpeg",
+        "to_file": "photos/raw/IMG-20260731-WA0000.jpeg"
       },
       {
         "from": "2026-07-31T22:58:58+00:00",
         "to": "2026-08-02T18:23:21+00:00",
         "gap_hours": 43.406,
-        "from_file": "evidence/IMG-20260731-WA0048.jpeg",
-        "to_file": "evidence/IMG-20260802-WA0001.jpeg"
+        "from_file": "photos/raw/IMG-20260731-WA0048.jpeg",
+        "to_file": "photos/raw/IMG-20260802-WA0001.jpeg"
       },
       {
         "from": "2026-08-02T18:23:43+00:00",
         "to": "2026-08-04T18:50:24+00:00",
         "gap_hours": 48.445,
-        "from_file": "evidence/IMG-20260802-WA0004.jpeg",
-        "to_file": "evidence/IMG-20260804-WA0000.jpeg"
+        "from_file": "photos/raw/IMG-20260802-WA0004.jpeg",
+        "to_file": "photos/raw/IMG-20260804-WA0000.jpeg"
       },
       {
         "from": "2026-08-04T18:52:04+00:00",
         "to": "2026-08-14T11:33:35+00:00",
         "gap_hours": 232.692,
-        "from_file": "evidence/IMG-20260804-WA0017.jpeg",
-        "to_file": "evidence/IMG-20260814-WA0000.jpeg"
+        "from_file": "photos/raw/IMG-20260804-WA0017.jpeg",
+        "to_file": "photos/raw/IMG-20260814-WA0000.jpeg"
       }
     ],
     "anomaly_count": 0,
@@ -97,7 +97,7 @@
   },
   "findings": [
     {
-      "path": "evidence/IMG-20260725-WA0000.jpeg",
+      "path": "photos/raw/IMG-20260725-WA0000.jpeg",
       "filename": "IMG-20260725-WA0000.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -110,9 +110,9 @@
         "inode": 200901,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235777583507,
         "modify_time_ns": 1787268716006235137,
-        "change_time_ns": 1787268716006235137,
+        "change_time_ns": 1787273224813456182,
         "modify_time_utc": "2026-08-20T23:31:56.006235+00:00"
       },
       "hashes": {
@@ -193,7 +193,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260731-WA0000.jpeg",
+      "path": "photos/raw/IMG-20260731-WA0000.jpeg",
       "filename": "IMG-20260731-WA0000.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -206,9 +206,9 @@
         "inode": 200902,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235785583599,
         "modify_time_ns": 1787268716014235229,
-        "change_time_ns": 1787268716014235229,
+        "change_time_ns": 1787273224813456182,
         "modify_time_utc": "2026-08-20T23:31:56.014235+00:00"
       },
       "hashes": {
@@ -289,7 +289,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260731-WA0003.jpeg",
+      "path": "photos/raw/IMG-20260731-WA0003.jpeg",
       "filename": "IMG-20260731-WA0003.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -302,9 +302,9 @@
         "inode": 200903,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235789583646,
         "modify_time_ns": 1787268716018235275,
-        "change_time_ns": 1787268716018235275,
+        "change_time_ns": 1787273224813456182,
         "modify_time_utc": "2026-08-20T23:31:56.018235+00:00"
       },
       "hashes": {
@@ -385,7 +385,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260731-WA0006.jpeg",
+      "path": "photos/raw/IMG-20260731-WA0006.jpeg",
       "filename": "IMG-20260731-WA0006.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -398,9 +398,9 @@
         "inode": 200904,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235793583692,
         "modify_time_ns": 1787268716026235367,
-        "change_time_ns": 1787268716026235367,
+        "change_time_ns": 1787273224817456228,
         "modify_time_utc": "2026-08-20T23:31:56.026235+00:00"
       },
       "hashes": {
@@ -481,7 +481,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260731-WA0009.jpeg",
+      "path": "photos/raw/IMG-20260731-WA0009.jpeg",
       "filename": "IMG-20260731-WA0009.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -494,9 +494,9 @@
         "inode": 200905,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235797583739,
         "modify_time_ns": 1787268716030235414,
-        "change_time_ns": 1787268716030235414,
+        "change_time_ns": 1787273224817456228,
         "modify_time_utc": "2026-08-20T23:31:56.030236+00:00"
       },
       "hashes": {
@@ -577,7 +577,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260731-WA0012.jpeg",
+      "path": "photos/raw/IMG-20260731-WA0012.jpeg",
       "filename": "IMG-20260731-WA0012.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -590,9 +590,9 @@
         "inode": 200906,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235801583785,
         "modify_time_ns": 1787268716034235460,
-        "change_time_ns": 1787268716034235460,
+        "change_time_ns": 1787273224817456228,
         "modify_time_utc": "2026-08-20T23:31:56.034235+00:00"
       },
       "hashes": {
@@ -673,7 +673,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260731-WA0048.jpeg",
+      "path": "photos/raw/IMG-20260731-WA0048.jpeg",
       "filename": "IMG-20260731-WA0048.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -686,9 +686,9 @@
         "inode": 200907,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235805583831,
         "modify_time_ns": 1787268716042235552,
-        "change_time_ns": 1787268716042235552,
+        "change_time_ns": 1787273224821456274,
         "modify_time_utc": "2026-08-20T23:31:56.042236+00:00"
       },
       "hashes": {
@@ -769,7 +769,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260802-WA0001.jpeg",
+      "path": "photos/raw/IMG-20260802-WA0001.jpeg",
       "filename": "IMG-20260802-WA0001.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -782,9 +782,9 @@
         "inode": 200908,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235813583924,
         "modify_time_ns": 1787268716046235598,
-        "change_time_ns": 1787268716046235598,
+        "change_time_ns": 1787273224821456274,
         "modify_time_utc": "2026-08-20T23:31:56.046236+00:00"
       },
       "hashes": {
@@ -865,7 +865,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260802-WA0004.jpeg",
+      "path": "photos/raw/IMG-20260802-WA0004.jpeg",
       "filename": "IMG-20260802-WA0004.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -878,9 +878,9 @@
         "inode": 200909,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235817583971,
         "modify_time_ns": 1787268716050235645,
-        "change_time_ns": 1787268716050235645,
+        "change_time_ns": 1787273224821456274,
         "modify_time_utc": "2026-08-20T23:31:56.050236+00:00"
       },
       "hashes": {
@@ -961,7 +961,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260804-WA0000.jpeg",
+      "path": "photos/raw/IMG-20260804-WA0000.jpeg",
       "filename": "IMG-20260804-WA0000.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -974,9 +974,9 @@
         "inode": 200910,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235817583971,
         "modify_time_ns": 1787268716054235690,
-        "change_time_ns": 1787268716054235690,
+        "change_time_ns": 1787273224821456274,
         "modify_time_utc": "2026-08-20T23:31:56.054236+00:00"
       },
       "hashes": {
@@ -1057,7 +1057,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260804-WA0003.jpeg",
+      "path": "photos/raw/IMG-20260804-WA0003.jpeg",
       "filename": "IMG-20260804-WA0003.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -1070,9 +1070,9 @@
         "inode": 200911,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235825584064,
         "modify_time_ns": 1787268716062235783,
-        "change_time_ns": 1787268716062235783,
+        "change_time_ns": 1787273224825456321,
         "modify_time_utc": "2026-08-20T23:31:56.062236+00:00"
       },
       "hashes": {
@@ -1153,7 +1153,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260804-WA0006.jpeg",
+      "path": "photos/raw/IMG-20260804-WA0006.jpeg",
       "filename": "IMG-20260804-WA0006.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -1166,9 +1166,9 @@
         "inode": 200912,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235829584111,
         "modify_time_ns": 1787268716066235829,
-        "change_time_ns": 1787268716066235829,
+        "change_time_ns": 1787273224825456321,
         "modify_time_utc": "2026-08-20T23:31:56.066236+00:00"
       },
       "hashes": {
@@ -1249,7 +1249,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260804-WA0014.jpeg",
+      "path": "photos/raw/IMG-20260804-WA0014.jpeg",
       "filename": "IMG-20260804-WA0014.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -1262,9 +1262,9 @@
         "inode": 200913,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235833584157,
         "modify_time_ns": 1787268716070235875,
-        "change_time_ns": 1787268716070235875,
+        "change_time_ns": 1787273224825456321,
         "modify_time_utc": "2026-08-20T23:31:56.070236+00:00"
       },
       "hashes": {
@@ -1345,7 +1345,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260804-WA0017.jpeg",
+      "path": "photos/raw/IMG-20260804-WA0017.jpeg",
       "filename": "IMG-20260804-WA0017.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -1358,9 +1358,9 @@
         "inode": 200914,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716082236013,
+        "access_time_ns": 1787273235837584204,
         "modify_time_ns": 1787268716074235921,
-        "change_time_ns": 1787268716074235921,
+        "change_time_ns": 1787273224829456367,
         "modify_time_utc": "2026-08-20T23:31:56.074236+00:00"
       },
       "hashes": {
@@ -1441,7 +1441,7 @@
       }
     },
     {
-      "path": "evidence/IMG-20260814-WA0000.jpeg",
+      "path": "photos/raw/IMG-20260814-WA0000.jpeg",
       "filename": "IMG-20260814-WA0000.jpeg",
       "extension": ".jpeg",
       "mime_type": "image/jpeg",
@@ -1454,9 +1454,9 @@
         "inode": 200915,
         "device": 65024,
         "hard_link_count": 1,
-        "access_time_ns": 1787268716138236659,
+        "access_time_ns": 1787273235841584250,
         "modify_time_ns": 1787268716082236013,
-        "change_time_ns": 1787268716082236013,
+        "change_time_ns": 1787273224829456367,
         "modify_time_utc": "2026-08-20T23:31:56.082236+00:00"
       },
       "hashes": {
