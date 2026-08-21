@@ -79,16 +79,20 @@ A representative report fragment is:
 
 ## Google Drive ingestion
 
-The workflow ingests files from the configured public Google Drive folder `https://drive.google.com/drive/folders/1K8xeie-7gwmWf75R_QmSFWxIFHBxC2Rz` before running the raw scan. A repository Actions secret named `GDRIVE_FOLDER_URL` may override this default URL. The ingestion step downloads the folder into a temporary workspace, routes raw images into `evidence/photos/raw/`, routes APKs, contact cards, archives, lists, and configuration payloads into `evidence/other/`, avoids overwriting existing files by adding a `__gdrive` suffix, and writes `evidence/gdrive_ingestion_manifest.json` with source paths, destination paths, sizes, and SHA-256 hashes. It never deletes existing evidence and never executes downloaded content.
+The workflow ingests files from the configured public Google Drive folder `https://drive.google.com/drive/folders/1UOmnVMArcB0tp94fIP71HYv1oTc5PuCu` before running the raw scan. A repository Actions secret named `GDRIVE_FOLDER_URL` may override this default URL. The ingestion step downloads the folder into a temporary workspace, routes raw images into `evidence/photos/raw/`, routes APKs, contact cards, archives, lists, and configuration payloads into `evidence/other/`, avoids overwriting existing files by adding a `__gdrive` suffix, and writes `evidence/gdrive_ingestion_manifest.json` with source paths, destination paths, sizes, and SHA-256 hashes. It never deletes existing evidence and never executes downloaded content.
 
 The same operation can be run locally:
 
 ```bash
-export GDRIVE_FOLDER_URL="https://drive.google.com/drive/folders/1K8xeie-7gwmWf75R_QmSFWxIFHBxC2Rz"
+export GDRIVE_FOLDER_URL="https://drive.google.com/drive/folders/1UOmnVMArcB0tp94fIP71HYv1oTc5PuCu"
 python scripts/fetch_gdrive.py --destination evidence --manifest evidence/gdrive_ingestion_manifest.json
 ```
 
 If `GDRIVE_FOLDER_URL` is not configured, the script exits successfully with `skipped_no_folder_url`, allowing the workflow to scan repository evidence without requiring a Drive source. The folder must be publicly accessible to the downloader; authenticated private Drive ingestion should use a separately managed service account or API credential rather than committing credentials to the repository.
+
+## Account security audit
+
+Run `python scripts/generate_account_security_audit.py` after ingestion to create `account_security_audit.json`. The audit extracts observed usernames, phone numbers, email addresses, contact-change phrases, URLs, IP addresses, and additive network/account/contact indicators from text, VCF, HTML, and ZIP payloads. It is read-only and treats pattern matches as observations rather than proof of compromise.
 
 ## Tests
 
