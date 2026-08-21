@@ -1,0 +1,1540 @@
+{
+  "schema_version": "forensic-detailed-summary-1.0",
+  "scan_metadata": {
+    "scan_time_utc": "2026-08-21T00:23:21.486476+00:00",
+    "repository_relative_evidence_root": "evidence/",
+    "image_extensions_scanned": [
+      ".bmp",
+      ".gif",
+      ".jpeg",
+      ".jpg",
+      ".png",
+      ".tif",
+      ".tiff",
+      ".webp"
+    ],
+    "timeline_gap_threshold_hours": 24,
+    "requested_file_count": 18,
+    "actual_photo_file_count": 15,
+    "total_size_bytes": 17181105
+  },
+  "summary": {
+    "photo_count": 15,
+    "total_size_bytes": 17181105,
+    "formats": {
+      "JPEG": 15
+    },
+    "dimensions": {
+      "3840x2160": 14,
+      "3648x2736": 1
+    },
+    "device_signatures": [
+      {
+        "signature": {
+          "make": "samsung",
+          "model": "SM-F946B",
+          "software": "F946BXXS7GZF1",
+          "unique_id": "M50QLPL00SM M50QLPL00SM"
+        },
+        "count": 6
+      },
+      {
+        "signature": {
+          "make": "samsung",
+          "model": "SM-F946B",
+          "software": "F946BXXS7GZG1",
+          "unique_id": "M50QLPL00SM M50QLPL00SM"
+        },
+        "count": 8
+      },
+      {
+        "signature": {
+          "make": "samsung",
+          "model": "SM-F946B",
+          "software": "F946BXXS7GZG1",
+          "unique_id": "L10QSOL00MM L10QSOL00MM"
+        },
+        "count": 1
+      }
+    ],
+    "duplicate_sha256_groups": [],
+    "capture_time_range": {
+      "earliest_utc": "2026-07-25T03:41:34+00:00",
+      "latest_utc": "2026-08-14T11:33:35+00:00"
+    },
+    "timeline_gaps_over_threshold": [
+      {
+        "from": "2026-07-25T03:41:34+00:00",
+        "to": "2026-07-31T11:13:47+00:00",
+        "gap_hours": 151.537,
+        "from_file": "evidence/IMG-20260725-WA0000.jpeg",
+        "to_file": "evidence/IMG-20260731-WA0000.jpeg"
+      },
+      {
+        "from": "2026-07-31T22:58:58+00:00",
+        "to": "2026-08-02T18:23:21+00:00",
+        "gap_hours": 43.406,
+        "from_file": "evidence/IMG-20260731-WA0048.jpeg",
+        "to_file": "evidence/IMG-20260802-WA0001.jpeg"
+      },
+      {
+        "from": "2026-08-02T18:23:43+00:00",
+        "to": "2026-08-04T18:50:24+00:00",
+        "gap_hours": 48.445,
+        "from_file": "evidence/IMG-20260802-WA0004.jpeg",
+        "to_file": "evidence/IMG-20260804-WA0000.jpeg"
+      },
+      {
+        "from": "2026-08-04T18:52:04+00:00",
+        "to": "2026-08-14T11:33:35+00:00",
+        "gap_hours": 232.692,
+        "from_file": "evidence/IMG-20260804-WA0017.jpeg",
+        "to_file": "evidence/IMG-20260814-WA0000.jpeg"
+      }
+    ],
+    "anomaly_count": 0,
+    "anomalies": []
+  },
+  "findings": [
+    {
+      "path": "evidence/IMG-20260725-WA0000.jpeg",
+      "filename": "IMG-20260725-WA0000.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 921093,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200901,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716006235137,
+        "change_time_ns": 1787268716006235137,
+        "modify_time_utc": "2026-08-20T23:31:56.006235+00:00"
+      },
+      "hashes": {
+        "md5": "d8e61349a1decdee280eb02fe3df3563",
+        "sha256": "3c253ebbafc7c7ad3796a1f620ae3b6541bd761d391425e4f01efc5dbd9c2a00"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZF1\\x002026:07:25 03:41:34\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x02h\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04234\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04234\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04234\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:07:25 03:41:34\\x002026:07:25 03:41:34\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x00\\xfc\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZF1",
+          "274": 1,
+          "306": "2026:07:25 03:41:34",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Horizontal (normal)",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZF1",
+        "Image DateTime": "2026:07:25 03:41:34",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/59",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "616",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:07:25 03:41:34",
+        "EXIF DateTimeDigitized": "2026:07:25 03:41:34",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/59",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "63/25",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "234",
+        "EXIF SubSecTimeOriginal": "234",
+        "EXIF SubSecTimeDigitized": "234",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-07-25T03:41:34+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZF1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260731-WA0000.jpeg",
+      "filename": "IMG-20260731-WA0000.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 1230568,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200902,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716014235229,
+        "change_time_ns": 1787268716014235229,
+        "modify_time_utc": "2026-08-20T23:31:56.014235+00:00"
+      },
+      "hashes": {
+        "md5": "effd40c4d122494ad85ed232ff45b557",
+        "sha256": "755ce74bd41245be5df9d466b708599cd6863d3ae383861b1fd781eb5aba2bd7"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x06\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZF1\\x002026:07:31 11:13:47\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x01\\xd7\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04635\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04635\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04635\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:07:31 11:13:47\\x002026:07:31 11:13:47\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x01I\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZF1",
+          "274": 6,
+          "306": "2026:07:31 11:13:47",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZF1",
+        "Image DateTime": "2026:07:31 11:13:47",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/59",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "471",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:07:31 11:13:47",
+        "EXIF DateTimeDigitized": "2026:07:31 11:13:47",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/59",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "329/100",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "635",
+        "EXIF SubSecTimeOriginal": "635",
+        "EXIF SubSecTimeDigitized": "635",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-07-31T11:13:47+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZF1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260731-WA0003.jpeg",
+      "filename": "IMG-20260731-WA0003.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 1150627,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200903,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716018235275,
+        "change_time_ns": 1787268716018235275,
+        "modify_time_utc": "2026-08-20T23:31:56.018235+00:00"
+      },
+      "hashes": {
+        "md5": "6c2d7a6501df8667733358677fb8d6de",
+        "sha256": "aa89a2bb753f9344d538df435614974916e9a7de95fc8d76810265cc2002a9ca"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x06\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZF1\\x002026:07:31 11:14:01\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x02\\x0f\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04760\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04760\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04760\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:07:31 11:14:01\\x002026:07:31 11:14:01\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x016\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZF1",
+          "274": 6,
+          "306": "2026:07:31 11:14:01",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZF1",
+        "Image DateTime": "2026:07:31 11:14:01",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/59",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "527",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:07:31 11:14:01",
+        "EXIF DateTimeDigitized": "2026:07:31 11:14:01",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/59",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "31/10",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "760",
+        "EXIF SubSecTimeOriginal": "760",
+        "EXIF SubSecTimeDigitized": "760",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-07-31T11:14:01+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZF1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260731-WA0006.jpeg",
+      "filename": "IMG-20260731-WA0006.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 981295,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200904,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716026235367,
+        "change_time_ns": 1787268716026235367,
+        "modify_time_utc": "2026-08-20T23:31:56.026235+00:00"
+      },
+      "hashes": {
+        "md5": "22583f8222421ac44cc75beb83076102",
+        "sha256": "3fc96bcfcd0a892c55e9379ac3189d42e0f3c499da294522076c0909d75d9209"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x06\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZF1\\x002026:07:31 11:14:12\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x01\\xc9\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04715\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04715\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04715\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:07:31 11:14:12\\x002026:07:31 11:14:12\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x01^\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZF1",
+          "274": 6,
+          "306": "2026:07:31 11:14:12",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZF1",
+        "Image DateTime": "2026:07:31 11:14:12",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/59",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "457",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:07:31 11:14:12",
+        "EXIF DateTimeDigitized": "2026:07:31 11:14:12",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/59",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "7/2",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "715",
+        "EXIF SubSecTimeOriginal": "715",
+        "EXIF SubSecTimeDigitized": "715",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-07-31T11:14:12+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZF1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260731-WA0009.jpeg",
+      "filename": "IMG-20260731-WA0009.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 902238,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200905,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716030235414,
+        "change_time_ns": 1787268716030235414,
+        "modify_time_utc": "2026-08-20T23:31:56.030236+00:00"
+      },
+      "hashes": {
+        "md5": "ecfe99433fd2c161fa766b7c306b7e26",
+        "sha256": "f51ae54e4ea7fa979908e2ada5148fe30368db68215e57043e69903512e19a79"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x06\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZF1\\x002026:07:31 11:14:22\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x02\\xb6\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04932\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04932\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04932\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:07:31 11:14:22\\x002026:07:31 11:14:22\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x00\\xde\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZF1",
+          "274": 6,
+          "306": "2026:07:31 11:14:22",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZF1",
+        "Image DateTime": "2026:07:31 11:14:22",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/59",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "694",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:07:31 11:14:22",
+        "EXIF DateTimeDigitized": "2026:07:31 11:14:22",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/59",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "111/50",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "932",
+        "EXIF SubSecTimeOriginal": "932",
+        "EXIF SubSecTimeDigitized": "932",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-07-31T11:14:22+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZF1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260731-WA0012.jpeg",
+      "filename": "IMG-20260731-WA0012.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 1112066,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200906,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716034235460,
+        "change_time_ns": 1787268716034235460,
+        "modify_time_utc": "2026-08-20T23:31:56.034235+00:00"
+      },
+      "hashes": {
+        "md5": "133bac096df617d9f834b1a7b6180501",
+        "sha256": "b8e776610502ca9979c97ce4318804a46b07d49578825c1b665f45c6b964934f"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x06\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZF1\\x002026:07:31 11:14:32\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x01\\xc3\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04873\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04873\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04873\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:07:31 11:14:32\\x002026:07:31 11:14:32\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x01m\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZF1",
+          "274": 6,
+          "306": "2026:07:31 11:14:32",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZF1",
+        "Image DateTime": "2026:07:31 11:14:32",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/59",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "451",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:07:31 11:14:32",
+        "EXIF DateTimeDigitized": "2026:07:31 11:14:32",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/59",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "73/20",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "873",
+        "EXIF SubSecTimeOriginal": "873",
+        "EXIF SubSecTimeDigitized": "873",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-07-31T11:14:32+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZF1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260731-WA0048.jpeg",
+      "filename": "IMG-20260731-WA0048.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 1097177,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200907,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716042235552,
+        "change_time_ns": 1787268716042235552,
+        "modify_time_utc": "2026-08-20T23:31:56.042236+00:00"
+      },
+      "hashes": {
+        "md5": "e2b35103324c5350a7dbb9e47f7f1832",
+        "sha256": "30e28f0b4850f0c05e1c9264e9f0ff0a0bb476aa4087fbe0902d3918f607cf8d"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x06\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZG1\\x002026:07:31 22:58:58\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x01\\xb8\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04568\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04568\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04568\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:07:31 22:58:58\\x002026:07:31 22:58:58\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x01[\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\x01\\x00\\x00\\x00;\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZG1",
+          "274": 6,
+          "306": "2026:07:31 22:58:58",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZG1",
+        "Image DateTime": "2026:07:31 22:58:58",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/59",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "440",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:07:31 22:58:58",
+        "EXIF DateTimeDigitized": "2026:07:31 22:58:58",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/59",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "347/100",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "568",
+        "EXIF SubSecTimeOriginal": "568",
+        "EXIF SubSecTimeDigitized": "568",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-07-31T22:58:58+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZG1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260802-WA0001.jpeg",
+      "filename": "IMG-20260802-WA0001.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 871404,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200908,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716046235598,
+        "change_time_ns": 1787268716046235598,
+        "modify_time_utc": "2026-08-20T23:31:56.046236+00:00"
+      },
+      "hashes": {
+        "md5": "5a9d1ab9fb1fc46c695d2382f8d35806",
+        "sha256": "932157a323643a15a52c64717aa7558262dcf0bb424172e8211e417d174c75d8"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x06\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZG1\\x002026:08:02 18:23:21\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x02\\xc8\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04973\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04973\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04973\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:08:02 18:23:21\\x002026:08:02 18:23:21\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\xff\\xff\\xfe\\xd4\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZG1",
+          "274": 6,
+          "306": "2026:08:02 18:23:21",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZG1",
+        "Image DateTime": "2026:08:02 18:23:21",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/14",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "712",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:08:02 18:23:21",
+        "EXIF DateTimeDigitized": "2026:08:02 18:23:21",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/14",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "1073741749/25",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "973",
+        "EXIF SubSecTimeOriginal": "973",
+        "EXIF SubSecTimeDigitized": "973",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-08-02T18:23:21+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZG1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260802-WA0004.jpeg",
+      "filename": "IMG-20260802-WA0004.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 834828,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200909,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716050235645,
+        "change_time_ns": 1787268716050235645,
+        "modify_time_utc": "2026-08-20T23:31:56.050236+00:00"
+      },
+      "hashes": {
+        "md5": "dbabc0eb750ef08dc2040625dc63f98e",
+        "sha256": "af379986db27219cb8083acd5b7922ec9a74737edc5db9e0926311e951a3131a"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x06\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZG1\\x002026:08:02 18:23:43\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x04\\x90\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04431\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04431\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04431\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:08:02 18:23:43\\x002026:08:02 18:23:43\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\xff\\xff\\xfe\\x12\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZG1",
+          "274": 6,
+          "306": "2026:08:02 18:23:43",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZG1",
+        "Image DateTime": "2026:08:02 18:23:43",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/14",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "1168",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:08:02 18:23:43",
+        "EXIF DateTimeDigitized": "2026:08:02 18:23:43",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/14",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "2147483401/50",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "431",
+        "EXIF SubSecTimeOriginal": "431",
+        "EXIF SubSecTimeDigitized": "431",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-08-02T18:23:43+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZG1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260804-WA0000.jpeg",
+      "filename": "IMG-20260804-WA0000.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 1090637,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200910,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716054235690,
+        "change_time_ns": 1787268716054235690,
+        "modify_time_utc": "2026-08-20T23:31:56.054236+00:00"
+      },
+      "hashes": {
+        "md5": "7b8027a1792560a5706d9dc5999be5b3",
+        "sha256": "8372f8dbc15f1d824f35d8b0d8b8c44e060466f4c997bb2cc6a0bd7f8949dedf"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x06\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZG1\\x002026:08:04 18:50:24\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x02)\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04521\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04521\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04521\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:08:04 18:50:24\\x002026:08:04 18:50:24\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\xff\\xff\\xffS\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x11\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x11\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZG1",
+          "274": 6,
+          "306": "2026:08:04 18:50:24",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZG1",
+        "Image DateTime": "2026:08:04 18:50:24",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/17",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "553",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:08:04 18:50:24",
+        "EXIF DateTimeDigitized": "2026:08:04 18:50:24",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/17",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "4294967123/100",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "521",
+        "EXIF SubSecTimeOriginal": "521",
+        "EXIF SubSecTimeDigitized": "521",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-08-04T18:50:24+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZG1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260804-WA0003.jpeg",
+      "filename": "IMG-20260804-WA0003.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 1067510,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200911,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716062235783,
+        "change_time_ns": 1787268716062235783,
+        "modify_time_utc": "2026-08-20T23:31:56.062236+00:00"
+      },
+      "hashes": {
+        "md5": "098d9670f6e911f1a85bf22b973ff721",
+        "sha256": "f95f2b8631702e74d710209a9198e6e63b50a39221462512724db4a112a11a43"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x06\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZG1\\x002026:08:04 18:50:45\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x05\\x0b\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04038\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04038\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04038\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:08:04 18:50:45\\x002026:08:04 18:50:45\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\xff\\xff\\xfd\\xf4\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZG1",
+          "274": 6,
+          "306": "2026:08:04 18:50:45",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZG1",
+        "Image DateTime": "2026:08:04 18:50:45",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/14",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "1291",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:08:04 18:50:45",
+        "EXIF DateTimeDigitized": "2026:08:04 18:50:45",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/14",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "1073741693/25",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "038",
+        "EXIF SubSecTimeOriginal": "038",
+        "EXIF SubSecTimeDigitized": "038",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-08-04T18:50:45+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZG1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260804-WA0006.jpeg",
+      "filename": "IMG-20260804-WA0006.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 937538,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200912,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716066235829,
+        "change_time_ns": 1787268716066235829,
+        "modify_time_utc": "2026-08-20T23:31:56.066236+00:00"
+      },
+      "hashes": {
+        "md5": "2678e245a067dd72f987f6fac7a3d5c8",
+        "sha256": "4d27c047a492476acbbdc14e6e923e125d9a3994c74e353e0cf5bdd993f93332"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x06\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZG1\\x002026:08:04 18:50:51\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x02\"\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04950\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04950\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04950\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:08:04 18:50:51\\x002026:08:04 18:50:51\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\xff\\xff\\xffU\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x11\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x11\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZG1",
+          "274": 6,
+          "306": "2026:08:04 18:50:51",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZG1",
+        "Image DateTime": "2026:08:04 18:50:51",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/17",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "546",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:08:04 18:50:51",
+        "EXIF DateTimeDigitized": "2026:08:04 18:50:51",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/17",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "171798685/4",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "950",
+        "EXIF SubSecTimeOriginal": "950",
+        "EXIF SubSecTimeDigitized": "950",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-08-04T18:50:51+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZG1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260804-WA0014.jpeg",
+      "filename": "IMG-20260804-WA0014.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 1251154,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200913,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716070235875,
+        "change_time_ns": 1787268716070235875,
+        "modify_time_utc": "2026-08-20T23:31:56.070236+00:00"
+      },
+      "hashes": {
+        "md5": "405711991bb21e3d96aefcadcfb88009",
+        "sha256": "7283e3d1470f87cfdadfa8b6018e5d4e64a9ad5afd6271cafabe1de62338956e"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x06\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZG1\\x002026:08:04 18:51:54\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x02\\x1d\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04841\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04841\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04841\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:08:04 18:51:54\\x002026:08:04 18:51:54\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\xff\\xff\\xff\\xd8\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x18\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x18\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZG1",
+          "274": 6,
+          "306": "2026:08:04 18:51:54",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZG1",
+        "Image DateTime": "2026:08:04 18:51:54",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/24",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "541",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:08:04 18:51:54",
+        "EXIF DateTimeDigitized": "2026:08:04 18:51:54",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/24",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "1073741814/25",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "841",
+        "EXIF SubSecTimeOriginal": "841",
+        "EXIF SubSecTimeDigitized": "841",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-08-04T18:51:54+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZG1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260804-WA0017.jpeg",
+      "filename": "IMG-20260804-WA0017.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 740048,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200914,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716082236013,
+        "modify_time_ns": 1787268716074235921,
+        "change_time_ns": 1787268716074235921,
+        "modify_time_utc": "2026-08-20T23:31:56.074236+00:00"
+      },
+      "hashes": {
+        "md5": "5c3a1e193b8a113e7946bb03870962bb",
+        "sha256": "aecc2075af7bf730c72f687995a60f7690b07f4742d36c70687d9c9a134af605"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3840,
+        "height": 2160,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x06\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZG1\\x002026:08:04 18:52:04\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0f\\x00\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x08p\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x02V\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04324\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04324\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04324\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x17\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:08:04 18:52:04\\x002026:08:04 18:52:04\\x000220\\x00\\x00\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\xff\\xff\\xffv\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x13\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x13\\x00\\x00\\x00\\xa9\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x15\\x18\\x00\\x00\\x03\\xe8M50QLPL00SM M50QLPL00SM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZG1",
+          "274": 6,
+          "306": "2026:08:04 18:52:04",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZG1",
+        "Image DateTime": "2026:08:04 18:52:04",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3840",
+        "EXIF ImageLength": "2160",
+        "EXIF ExposureTime": "1/19",
+        "EXIF FNumber": "9/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "598",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:08:04 18:52:04",
+        "EXIF DateTimeDigitized": "2026:08:04 18:52:04",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/19",
+        "EXIF ApertureValue": "169/100",
+        "EXIF BrightnessValue": "2147483579/50",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "2",
+        "EXIF FocalLength": "27/5",
+        "EXIF SubSecTime": "324",
+        "EXIF SubSecTimeOriginal": "324",
+        "EXIF SubSecTimeDigitized": "324",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "23",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "M50QLPL00SM M50QLPL00SM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-08-04T18:52:04+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZG1",
+        "unique_id": "M50QLPL00SM M50QLPL00SM"
+      }
+    },
+    {
+      "path": "evidence/IMG-20260814-WA0000.jpeg",
+      "filename": "IMG-20260814-WA0000.jpeg",
+      "extension": ".jpeg",
+      "mime_type": "image/jpeg",
+      "file_attributes": {
+        "size_bytes": 2992922,
+        "mode_octal": "0o644",
+        "mode_type": "-rw-r--r--",
+        "uid": 1000,
+        "gid": 1000,
+        "inode": 200915,
+        "device": 65024,
+        "hard_link_count": 1,
+        "access_time_ns": 1787268716138236659,
+        "modify_time_ns": 1787268716082236013,
+        "change_time_ns": 1787268716082236013,
+        "modify_time_utc": "2026-08-20T23:31:56.082236+00:00"
+      },
+      "hashes": {
+        "md5": "1823454393aca1376072f67432e89039",
+        "sha256": "ed95989e030a144ddb61db79642ea1a03dce53f5af73e07e3690fd05469758ce"
+      },
+      "image": {
+        "format": "JPEG",
+        "width": 3648,
+        "height": 2736,
+        "mode": "RGB",
+        "info": {
+          "exif": "b'Exif\\x00\\x00MM\\x00*\\x00\\x00\\x00\\x08\\x00\\n\\x01\\x0f\\x00\\x02\\x00\\x00\\x00\\x08\\x00\\x00\\x00\\x96\\x01\\x10\\x00\\x02\\x00\\x00\\x00\\t\\x00\\x00\\x00\\x9e\\x01\\x12\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x08\\x00\\x00\\x01\\x1a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x86\\x01\\x1b\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x8e\\x01(\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x011\\x00\\x02\\x00\\x00\\x00\\x0e\\x00\\x00\\x00\\xa8\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\xb6\\x02\\x13\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xca\\x00\\x00\\x00\\x00\\x00\\x00\\x00H\\x00\\x00\\x00\\x01\\x00\\x00\\x00H\\x00\\x00\\x00\\x01samsung\\x00SM-F946B\\x00\\x00F946BXXS7GZG1\\x002026:08:14 11:33:35\\x00\\x00\\x1a\\x01\\x00\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x0e@\\x01\\x01\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\n\\xb0\\x82\\x9a\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02F\\x82\\x9d\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x026\\x88\"\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x88\\'\\x00\\x03\\x00\\x00\\x00\\x01\\x06\\x19\\x00\\x00\\x90\\x00\\x00\\x02\\x00\\x00\\x00\\x05\\x00\\x00\\x020\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x08\\x90\\x04\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x02\\x1c\\x91\\x01\\x00\\x07\\x00\\x00\\x00\\x04\\x01\\x02\\x03\\x00\\x92\\x01\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02N\\x92\\x02\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02V\\x92\\x03\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02>\\x92\\x04\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02^\\x92\\x05\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02f\\x92\\x07\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x02\\x00\\x00\\x92\\t\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\x92\\n\\x00\\x05\\x00\\x00\\x00\\x01\\x00\\x00\\x02n\\x92\\x90\\x00\\x02\\x00\\x00\\x00\\x04469\\x00\\x92\\x91\\x00\\x02\\x00\\x00\\x00\\x04469\\x00\\x92\\x92\\x00\\x02\\x00\\x00\\x00\\x04469\\x00\\xa0\\x01\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x01\\x00\\x00\\xa4\\x03\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4\\x05\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x19\\x00\\x00\\xa4\\x06\\x00\\x03\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\xa4 \\x00\\x02\\x00\\x00\\x00\\x18\\x00\\x00\\x02v\\x00\\x00\\x00\\x002026:08:14 11:33:35\\x002026:08:14 11:33:35\\x000220\\x00\\x00\\x00\\x00\\x00\\xdc\\x00\\x00\\x00d\\xff\\xff\\xfd\\xc7\\x00\\x00\\x00d\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x18\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x18\\x00\\x00\\x00\\xe3\\x00\\x00\\x00d\\x00\\x00\\x00\\x00\\x00\\x00\\x00d\\x00\\x00\\x00\\xb4\\x00\\x00\\x00d\\x00\\x00\\x0bT\\x00\\x00\\x03\\xe8L10QSOL00MM L10QSOL00MM\\x00'",
+          "dpi": [
+            "72.0",
+            "72.0"
+          ]
+        },
+        "pil_exif": {
+          "296": 2,
+          "34665": 202,
+          "271": "samsung",
+          "272": "SM-F946B",
+          "305": "F946BXXS7GZG1",
+          "274": 8,
+          "306": "2026:08:14 11:33:35",
+          "531": 1,
+          "282": "72.0",
+          "283": "72.0"
+        }
+      },
+      "exif": {
+        "Image Make": "samsung",
+        "Image Model": "SM-F946B",
+        "Image Orientation": "Rotated 90 CCW",
+        "Image XResolution": "72",
+        "Image YResolution": "72",
+        "Image ResolutionUnit": "Pixels/Inch",
+        "Image Software": "F946BXXS7GZG1",
+        "Image DateTime": "2026:08:14 11:33:35",
+        "Image YCbCrPositioning": "Centered",
+        "Image ExifOffset": "202",
+        "EXIF ImageWidth": "3648",
+        "EXIF ImageLength": "2736",
+        "EXIF ExposureTime": "1/24",
+        "EXIF FNumber": "11/5",
+        "EXIF ExposureProgram": "Program Normal",
+        "EXIF ISOSpeedRatings": "1561",
+        "EXIF ExifVersion": "0220",
+        "EXIF DateTimeOriginal": "2026:08:14 11:33:35",
+        "EXIF DateTimeDigitized": "2026:08:14 11:33:35",
+        "EXIF ComponentsConfiguration": "YCbCr",
+        "EXIF ShutterSpeedValue": "1/24",
+        "EXIF ApertureValue": "227/100",
+        "EXIF BrightnessValue": "4294966727/100",
+        "EXIF ExposureBiasValue": "0",
+        "EXIF MaxApertureValue": "9/5",
+        "EXIF MeteringMode": "CenterWeightedAverage",
+        "EXIF Flash": "Flash did not fire",
+        "EXIF FocalLength": "29/10",
+        "EXIF SubSecTime": "469",
+        "EXIF SubSecTimeOriginal": "469",
+        "EXIF SubSecTimeDigitized": "469",
+        "EXIF ColorSpace": "sRGB",
+        "EXIF WhiteBalance": "Auto",
+        "EXIF FocalLengthIn35mmFilm": "25",
+        "EXIF SceneCaptureType": "Standard",
+        "EXIF ImageUniqueID": "L10QSOL00MM L10QSOL00MM"
+      },
+      "anomalies": [],
+      "errors": [],
+      "capture_time_utc": "2026-08-14T11:33:35+00:00",
+      "device_signature": {
+        "make": "samsung",
+        "model": "SM-F946B",
+        "software": "F946BXXS7GZG1",
+        "unique_id": "L10QSOL00MM L10QSOL00MM"
+      }
+    }
+  ]
+}
