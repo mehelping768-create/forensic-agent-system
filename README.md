@@ -92,7 +92,7 @@ If `GDRIVE_FOLDER_URL` is not configured, the script exits successfully with `sk
 
 ## Historical timeline and call-log analysis
 
-Run `python scripts/generate_historical_timeline.py` to create `historical_timeline_summary.json` and extend `forensic_detailed_summary.json`. The analyzer safely inspects archive members, JSON/XML/text exports, database candidates, image metadata already present in the detailed report, filesystem timestamps, and archive-member timestamps. It does not execute archives or contact discovered endpoints. Call-log records are reported with direction, timestamps, and durations when a supported database or export is present; absent records are reported explicitly rather than inferred.
+Run `python scripts/generate_historical_timeline.py` to create `historical_timeline_summary.json` and extend `forensic_detailed_summary.json`. The analyzer safely inspects archive members, JSON/XML/text exports, JSON call-backup items, database candidates, image metadata already present in the detailed report, filesystem timestamps, and archive-member timestamps. It does not execute archives or contact discovered endpoints. Call-log records are reported with direction, timestamps, durations, original raw fields, and source paths when a supported database or export is present; absent records are reported explicitly rather than inferred.
 
 ## Account security audit
 

@@ -61,15 +61,34 @@ def parse_call_db(path: Path) -> tuple[list[dict[str, Any]], str | None]:
     except Exception as exc: return [], str(exc)
 
 
+def normalize_call_type(value: Any) -> str:
+    mapping = {1: 'incoming', 2: 'outgoing', 3: 'missed', '1': 'incoming', '2': 'outgoing', '3': 'missed'}
+    return mapping.get(value, str(value).lower() if value is not None else 'unknown')
+
+
+def json_call_records(obj: Any, source: str) -> list[dict[str, Any]]:
+    items = obj.get('items', []) if isinstance(obj, dict) else obj if isinstance(obj, list) else []
+    if not isinstance(items, list): return []
+    records=[]
+    for item in items:
+        if not isinstance(item, dict) or not any(k in item for k in ('number','duration','type','date')): continue
+        raw_date=item.get('date')
+        timestamp=iso(raw_date)
+        records.append({'source':source,'direction':normalize_call_type(item.get('type')),'timestamp_utc':timestamp,'duration_seconds':item.get('duration'),'number':item.get('number'),'name':item.get('name'),'raw_fields':item})
+    return records
+
+
 def inspect_bytes(data: bytes, source: str) -> tuple[list[dict[str, str]], list[dict[str, Any]]]:
     timeline=[]; call_candidates=[]
     text=data.decode('utf-8', errors='replace')
     for match in DATE_RE.finditer(text): timeline.append({'timestamp_utc':iso(match.group(0)),'source':source,'context':text[max(0,match.start()-100):match.end()+100]})
-    if CALL_TERMS.search(text): call_candidates.append({'source':source,'reason':'call-related terms present','record_count':0,'records':[]})
     try:
         obj=json.loads(text)
         timeline.extend({'timestamp_utc':e['timestamp_utc'],'source':source,'context':e['raw_value']} for e in walk_json(obj))
+        records=json_call_records(obj, source)
+        if records: call_candidates.append({'source':source,'reason':'structured JSON call export','record_count':len(records),'records':records})
     except Exception: pass
+    if CALL_TERMS.search(text) and not call_candidates: call_candidates.append({'source':source,'reason':'call-related terms present','record_count':0,'records':[]})
     return timeline, call_candidates
 
 
@@ -92,7 +111,9 @@ def main() -> None:
             except zipfile.BadZipFile as exc: call_logs.append({'source':path.relative_to(evidence).as_posix(),'reason':f'bad zip: {exc}','record_count':0,'records':[]})
     unique={json.dumps(x,sort_keys=True):x for x in timeline if x.get('timestamp_utc')}; timeline=sorted(unique.values(),key=lambda x:x['timestamp_utc'] or '')
     call_records=[r for c in call_logs for r in c.get('records',[])]
-    result={'schema_version':'historical-timeline-1.0','generated_at_utc':datetime.now(timezone.utc).isoformat(),'scope':'Observed timestamps and call-log candidates from available evidence; gaps are not proof of missing evidence.','summary':{'files_scanned':len(file_timestamps),'timeline_event_count':len(timeline),'earliest_observed_timestamp_utc':timeline[0]['timestamp_utc'] if timeline else None,'latest_observed_timestamp_utc':timeline[-1]['timestamp_utc'] if timeline else None,'call_log_sources':len(call_logs),'call_record_count':len(call_records),'incoming_count':0,'outgoing_count':0,'missed_count':0,'duration_seconds_total':0},'call_log_analysis':{'database_candidates':db_candidates,'sources':call_logs,'records':call_records},'timeline_events':timeline,'filesystem_timestamps':file_timestamps,'archive_members':archive_members}
+    direction_counts=Counter(r.get('direction','unknown') for r in call_records)
+    duration_total=sum(float(r.get('duration_seconds') or 0) for r in call_records if str(r.get('duration_seconds') or '').replace('.','',1).isdigit())
+    result={'schema_version':'historical-timeline-1.0','generated_at_utc':datetime.now(timezone.utc).isoformat(),'scope':'Observed timestamps and call-log candidates from available evidence; gaps are not proof of missing evidence.','summary':{'files_scanned':len(file_timestamps),'timeline_event_count':len(timeline),'earliest_observed_timestamp_utc':timeline[0]['timestamp_utc'] if timeline else None,'latest_observed_timestamp_utc':timeline[-1]['timestamp_utc'] if timeline else None,'call_log_sources':len(call_logs),'call_record_count':len(call_records),'incoming_count':direction_counts.get('incoming',0),'outgoing_count':direction_counts.get('outgoing',0),'missed_count':direction_counts.get('missed',0),'duration_seconds_total':duration_total},'call_log_analysis':{'database_candidates':db_candidates,'sources':call_logs,'records':call_records},'timeline_events':timeline,'filesystem_timestamps':file_timestamps,'archive_members':archive_members}
     output.write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
     # Extend the existing detailed report without replacing its raw findings.
     detail_path=root/'forensic_detailed_summary.json'
